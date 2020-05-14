@@ -187,18 +187,18 @@
 
 				<ul class="nav navbar-nav navbar-right hidden-xs">
 					<li>
-						<a href="#" id="reconnect" class="hide" title="[[global:reconnecting-message, {config.siteTitle}]]">
+						<a href="#" id="reconnect" class="hide" title="[[global:reconnecting-message, {config.siteTitle}]]" aria-label="[[global:reconnecting-message]]">
 							<i class="fa fa-check"></i>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md" aria-live>
 					<li class="dropdown">
 						<a><i class="fa fa-angle-double-up pointer fa-fw pagetop"></i></a>
 						<a><i class="fa fa-angle-up pointer fa-fw pageup"></i></a>
 
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="indexInput" aria-role="button">
 							<span class="pagination-text"></span>
 						</a>
 
@@ -209,7 +209,7 @@
 							<div class="progress-bar"></div>
 						</div>
 
-						<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown-menu" role="dialog" aria-labelledby="indexInput">
 							<li>
   								<input type="text" class="form-control" id="indexInput" placeholder="[[global:pagination.enter_index]]">
   							</li>
