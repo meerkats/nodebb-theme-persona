@@ -4,7 +4,8 @@
         [[unread:all_categories]]<!-- ENDIF selectedCategory --> <span class="caret"></span>
     </button>
     <div component="category-selector-search" class="hidden">
-        <input type="text" class="form-control" autocomplete="off">
+        <label for="category-selector-search" class="sr-only">[[category:filter-category]]</label>
+        <input type="text" class="form-control" autocomplete="off" id="category-selector-search">
     </div>
     <ul component="category/list" class="dropdown-menu category-dropdown-menu" role="menu">
         <li role="presentation" class="category">
