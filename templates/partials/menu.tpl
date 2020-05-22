@@ -1,5 +1,5 @@
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle pull-left" id="mobile-menu">
+				<button type="button" class="navbar-toggle pull-left" id="mobile-menu" aria-label="[[global:header.toggle_navigation]]">
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
 				</button>
