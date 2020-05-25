@@ -3,7 +3,7 @@
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
 				</button>
-				<button type="button" class="navbar-toggle hidden" id="mobile-chats">
+				<button type="button" class="navbar-toggle hidden" id="mobile-chats" aria-label="[[global:header.chats]]">
 					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
 					<i class="fa fa-lg fa-comment-o"></i>
 				</button>
@@ -187,18 +187,18 @@
 
 				<ul class="nav navbar-nav navbar-right hidden-xs">
 					<li>
-						<a href="#" id="reconnect" class="hide" title="[[global:reconnecting-message, {config.siteTitle}]]">
+						<a href="#" id="reconnect" class="hide" title="[[global:reconnecting-message, {config.siteTitle}]]" aria-label="[[global:reconnecting-message]]">
 							<i class="fa fa-check"></i>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md" aria-live>
 					<li class="dropdown">
 						<a><i class="fa fa-angle-double-up pointer fa-fw pagetop"></i></a>
 						<a><i class="fa fa-angle-up pointer fa-fw pageup"></i></a>
 
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="indexInput" aria-role="button">
 							<span class="pagination-text"></span>
 						</a>
 
@@ -209,7 +209,7 @@
 							<div class="progress-bar"></div>
 						</div>
 
-						<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown-menu" role="dialog" aria-labelledby="indexInput">
 							<li>
   								<input type="text" class="form-control" id="indexInput" placeholder="[[global:pagination.enter_index]]">
   							</li>

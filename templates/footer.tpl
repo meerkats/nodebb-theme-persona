@@ -1,6 +1,7 @@
 		</div><!-- /.container#content -->
 	</main>
 	<!-- IF !isSpider -->
+	<!-- IF inTopicSearchAvailable -->
 	<div class="topic-search hidden">
 		<div class="btn-group">
 			<button type="button" class="btn btn-default count"></button>
@@ -8,6 +9,7 @@
 			<button type="button" class="btn btn-default next"><i class="fa fa-fw fa-angle-down"></i></button>
 		</div>
 	</div>
+	<!-- ENDIF inTopicSearchAvailable -->
 
 	<div component="toaster/tray" class="alert-window">
 		<div id="reconnect-alert" class="alert alert-dismissable alert-warning clearfix hide" component="toaster/toast">
