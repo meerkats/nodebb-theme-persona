@@ -8,7 +8,7 @@
 				{breadcrumbs.text}
 				<!-- IF @last -->
 				<!-- IF !feeds:disableRSS -->
-				<!-- IF rssFeedUrl --><a target="_blank" href="{rssFeedUrl}" itemprop="item"><i class="fa fa-rss-square"></i></a><!-- ENDIF rssFeedUrl --><!-- ENDIF !feeds:disableRSS -->
+				<!-- IF rssFeedUrl --><a target="_blank" href="{rssFeedUrl}" itemprop="item" aria-label="[[persona:rss-feed]]"><i class="fa fa-rss-square"></i></a><!-- ENDIF rssFeedUrl --><!-- ENDIF !feeds:disableRSS -->
 				<!-- ENDIF @last -->
 			</span>
 		<!-- IF !@last --></a><!-- ENDIF !@last -->
